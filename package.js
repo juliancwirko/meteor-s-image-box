@@ -1,6 +1,6 @@
 Package.describe({
     summary: 'Image lightbox / popup with animations',
-    version: '0.1.0',
+    version: '0.1.1',
     name: 'juliancwirko:s-image-box',
     git: ''
 });

@@ -16,7 +16,7 @@ sImageBox = {
     },
     open: function (path, settings) {
         settings = settings || {};
-        settings = _.extend(this.settings, settings);
+        settings = _.extend({}, this.settings, settings);
         var classes = '';
         var scrollWidth;
         if (settings.originalHeight) {
