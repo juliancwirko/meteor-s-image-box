@@ -1,5 +1,8 @@
 ### Simple image popup/lightbox for Meteor
 
+- Website: [http://s-image-box.meteor.com/](http://s-image-box.meteor.com/)
+- Demo: [http://s-image-box-demo.meteor.com/](http://s-image-box-demo.meteor.com/)
+
 ### Usage
 
 Add package:
