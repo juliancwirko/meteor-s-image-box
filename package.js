@@ -2,7 +2,7 @@ Package.describe({
     summary: 'Image lightbox / popup with animations',
     version: '0.1.1',
     name: 'juliancwirko:s-image-box',
-    git: ''
+    git: 'https://github.com/juliancwirko/meteor-s-image-box.git'
 });
 
 Package.onUse(function (api) {
