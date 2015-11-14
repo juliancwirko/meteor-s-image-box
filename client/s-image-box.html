@@ -1,6 +1,15 @@
 <template name="sImageBox">
     <div class="s-image-box {{classes}}">
         <div class="s-image-box-close-btn"></div>
+        <div class="s-image-box-error">
+            <p>Error loading image...</p>
+        </div>
+        <div class="s-image-box-loading">
+            <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </div>
+        </div>
         <img class="s-image-box-image {{#if animation}}s-image-box-anim-{{animation}}{{/if}}" src="{{image}}" alt="">
     </div>
 </template>

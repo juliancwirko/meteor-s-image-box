@@ -33,25 +33,29 @@ sImageBox = {
         if (html) {
             scrollWidth = window.innerWidth - $(window).width();
             $('html').addClass('s-image-box-noscroll').css('margin-right', scrollWidth);
-            $('<img/>')
-                .load(function () {
-                    $(settings.appendTo || 'body').append(html);
-                    $('.s-image-box-close-btn, .s-image-box').on('click.s-image-box-close', sImageBox.close);
-                    $('.s-image-box-image').on('click.s-image-box-close', function (e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                    });
-                    $(document).on('keyup.s-image-box-close', function (e) {
-                        if (e.keyCode === 27) {
-                            e.preventDefault();
-                            sImageBox.close();
-                        }
-                    });
+            $(settings.appendTo || 'body').append(html);
+
+            $(html).imagesLoaded()
+                .done( function( instance ) {
+                    $('.s-image-box-loading').addClass('hidden');
+                    $('.s-image-box-image').addClass('visible');
                 })
-                .error(function () {
-                    console.log('Error loading image...');
-                })
-                .attr('src', path);
+                .fail( function() {
+                    $('.s-image-box-loading').addClass('hidden');
+                    $('.s-image-box-error').addClass('visible');
+                });
+
+            $('.s-image-box-close-btn, .s-image-box').on('click.s-image-box-close', sImageBox.close);
+            $('.s-image-box-image').on('click.s-image-box-close', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            });
+            $(document).on('keyup.s-image-box-close', function (e) {
+                if (e.keyCode === 27) {
+                    e.preventDefault();
+                    sImageBox.close();
+                }
+            });
         }
     },
     close: function () {

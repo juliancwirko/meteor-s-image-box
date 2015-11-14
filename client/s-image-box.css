@@ -26,9 +26,12 @@
 .s-image-box-image {
     max-width: 100%;
     max-height: 100%;
-    display: inline-block;
+    display: none;
     vertical-align: middle;
     cursor: default;
+}
+.s-image-box-image.visible {
+    display: inline-block;
 }
 .s-image-box.s-image-box-original-height .s-image-box-image {
     max-height: none;
@@ -39,21 +42,35 @@
 
 .s-image-box-close-btn {
     position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 10px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
-    border-radius: 100%;
-    background-color: rgba(0, 0, 0, .7);
 }
+.s-image-box-original-height .s-image-box-close-btn {
+    right: 30px;
+}
+
 .s-image-box-close-btn:after {
     content: '✖';
-    font-size: 25px;
+    font-size: 35px;
     color: #fff;
-    position: absolute;
-    top: 6px;
-    left: 10px;
+}
+
+.s-image-box-loading {
+    color: #fff;
+    display: block;
+}
+.s-image-box-loading.hidden {
+    display: none;
+}
+
+.s-image-box-error {
+    color: #fff;
+    margin-top: 100px;
+    display: none;
+}
+.s-image-box-error.visible {
+    display: block;
 }
 
 /*tools*/
