@@ -16,9 +16,7 @@ create 'packages' folder in your project root && cd packages
 git clone https://github.com/kakadais/meteor-s-image-box.git
 meteor add kakadais:s-image-box
 
-~~meteor add juliancwirko:s-image-box~~
 ```
-
 Then you can use two functions:
 
 1. sImageBox.open()
