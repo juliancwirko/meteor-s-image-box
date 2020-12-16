@@ -1,4 +1,4 @@
-#### Fork to fix Meteor version
+## Fork to Update Meteor & jQuery version
 Only update version of Meteor@1.11.1.
 (juliancwirko's repo was built with Meteor@1.2 and has jQuery version incompatible for Blaze.)
 
