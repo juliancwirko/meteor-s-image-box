@@ -1,3 +1,7 @@
+#### Fork to fix Meteor version
+juliancwirko's repo was built with Meteor@1.2 and has jQuery version incompatible for Blaze.
+Only update version of Meteor@1.11.1.
+
 ### Simple image popup/lightbox for Meteor
 
 - Website: [http://s-image-box.meteor.com/](http://s-image-box.meteor.com/)

@@ -1,12 +1,12 @@
 Package.describe({
     summary: 'Image lightbox / popup with animations',
-    version: '0.2.0',
-    name: 'juliancwirko:s-image-box',
+    version: '0.3.0',
+    name: 'kakadais:s-image-box',
     git: 'https://github.com/juliancwirko/meteor-s-image-box.git'
 });
 
 Package.onUse(function (api) {
-    api.versionsFrom('METEOR@1.2');
+    api.versionsFrom('METEOR@1.11.1');
     api.use('templating');
     api.use('ui');
     api.use('underscore');
