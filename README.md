@@ -1,6 +1,6 @@
 #### Fork to fix Meteor version
-juliancwirko's repo was built with Meteor@1.2 and has jQuery version incompatible for Blaze.
 Only update version of Meteor@1.11.1.
+(juliancwirko's repo was built with Meteor@1.2 and has jQuery version incompatible for Blaze.)
 
 ### Simple image popup/lightbox for Meteor
 
@@ -10,8 +10,14 @@ Only update version of Meteor@1.11.1.
 ### Usage
 
 Add package:
+```    
+create 'packages' folder in your project root && cd packages
 
-    meteor add juliancwirko:s-image-box
+git clone https://github.com/kakadais/meteor-s-image-box.git
+meteor add kakadais:s-image-box
+
+~~meteor add juliancwirko:s-image-box~~
+```
 
 Then you can use two functions:
 
